@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Verifiability Is How AI Safety Spending Scales</title>
+<meta name="description" content="Verification is the key to translating money into AI safety impact at scale: it lets capital buy labor without running into bottlenecks.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#1f1d1a;
+    --ink-soft:#5a564f;
+    --bg:#fbfaf7;
+    --rule:#e4e0d8;
+    --accent:#9a3b2e;
+    --measure:39rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#e9e6df;
+      --ink-soft:#a39e94;
+      --bg:#14130f;
+      --rule:#2c2a25;
+      --accent:#d98a78;
+    }
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,"Times New Roman",serif;
+    font-optical-sizing:auto;
+    font-size:20px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  .wrap{
+    max-width:var(--measure);
+    margin:0 auto;
+    padding:clamp(2.5rem,7vw,6rem) 1.4rem 6rem;
+  }
+
+  .meta{
+    font-size:.74rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin:0 0 2.4rem;
+  }
+  .meta a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)}
+  .meta a:hover{color:var(--ink)}
+
+  h1.title{
+    font-weight:600;
+    font-size:clamp(2rem,6vw,2.9rem);
+    line-height:1.12;
+    letter-spacing:-.012em;
+    margin:0 0 1.4rem;
+  }
+  .byline{
+    font-size:.74rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin:0 0 2.6rem;
+    padding-bottom:2.4rem;
+    border-bottom:1px solid var(--rule);
+  }
+
+  article{font-size:1.06rem}
+  article p{margin:0 0 1.35em}
+  article p:first-of-type{margin-top:0}
+  article h2{font-weight:600;font-size:1.5rem;letter-spacing:-.01em;margin:2.6rem 0 .8rem}
+  article h3{font-weight:600;font-size:1.2rem;margin:2rem 0 .6rem}
+  article a{color:var(--accent);text-underline-offset:2px;text-decoration-thickness:1px}
+  article a:hover{text-decoration-color:var(--ink-soft)}
+  article strong{font-weight:600}
+  article ul,article ol{padding-left:1.4em;margin:0 0 1.35em}
+  article li{margin:.5em 0}
+  article blockquote{
+    margin:1.8rem 0;
+    padding:.2rem 0 .2rem 1.3rem;
+    border-left:2px solid var(--accent);
+    color:var(--ink-soft);
+    font-style:italic;
+  }
+  article blockquote p{margin:0 0 .6em}
+  article hr{border:0;border-top:1px solid var(--rule);margin:3rem auto;width:42%}
+  article code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.86em;background:rgba(120,110,90,.12);
+    padding:.12em .38em;border-radius:3px;
+  }
+
+  footer{
+    margin-top:4rem;padding-top:1.6rem;border-top:1px solid var(--rule);
+    font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <p class="meta"><a href="https://github.com/wcuozzo/">Will Cuozzo</a> &nbsp;·&nbsp; Essays</p>
+
+    <h1 class="title">Verifiability Is How AI Safety Spending Scales</h1>
+    <p class="byline">Will Cuozzo &nbsp;·&nbsp; June 2026</p>
+
+    <article id="post"></article>
+
+    <footer>© 2026 Will Cuozzo</footer>
+  </div>
+
+  <script type="text/markdown" id="source">
+Verification is the key for translating money into AI safety impact at scale because it allows capital to buy labor without running into bottlenecks. Directing large amounts of dollars at easy-to-verify problems could have a high impact on safety right now, and work to expand the number of problems that are easy-to-verify is very high leverage.
+
+To see why this matters, it's worth looking at how people try to turn dollars into impact today and where that process hits ceilings. Current grantmaking relies on weeks to months of investigation and dozens of hours of grantmaker labor. This is genuinely valuable, and it's worth trying to scale. But it runs into problems with adverse selection, optics, onboarding, and serial time. Lowering the bar to approve $100M grants invites adverse selection and lowers the signal to noise of applications. Fraudulent actors at that scale are a major reputational hit. The returns to capital are real but diminish well below the hundreds of billions plausibly needed, as evidenced by a grantmaker at Coefficient Giving already reporting they are "bottlenecked [on] grantmaker bandwidth."
+
+The key is verifiability, or knowing what success looks like, which then opens up a variety of scalable approaches. You can have open bounties, structured competitions, or tiered grants based on intermediate successes. You can more confidently throw semi-trusted AI labor at problems. As a bonus, you have better optics because payouts only happen after results.
+
+Importantly, the unlock is verifiability as opposed to the bounties themselves. For hard-to-verify problems, experienced researcher time spent evaluating bounty submissions could be less valuable than time spent on research or mentorship. This lens suggests two kinds of valuable projects: easy-to-verify problems, and projects that make more problems easy-to-verify.
+
+For the first direction, the worry is that easy-to-verify problems relevant to AI safety are scarce. This concern is real, but a few directions look promising.
+
+1. **Trojan detection and other tractable interpretability benchmarks.** It is easy to verify if you've found a trojan, but the problem of finding them in neural nets is largely unsolved. Many competitions for trojan detection have already been hosted, and scaling up prize money and breadth is feasible. Also, the setup is similar to other kinds of safety-relevant conditional behavioral changes such as jailbreaks, alignment faking (conditioning on training vs deployment), and conditional emergent misalignment. As Yudkowsky noted, "Interpretability is a kind of work where you can actually see the results and verify that they're good results," so "Let's offer $100 billion in prizes for interpretability".
+
+2. **Red-team vs blue-team competitions,** where each team acts as the verifier for the other. The control agenda championed by Redwood Research fits nicely here. The paper is already set up as a red-team trying to sneak code vulnerabilities past the blue-team trying to catch them. You can vary the setup, have AIs play these games, and train AIs to be particularly good at these games in a GAN-like fashion. The red-team models in these setups need to be handled with appropriate security, since we're eliciting misalignment.
+
+3. **Self-contained mathematical problems,** like ARC's 2023 matrix-completion bounties. I could see similar self-contained problems pop up in work on superposition or learning theory.
+
+The second direction of valuable work is improving verifiability infrastructure. Taking interpretability as an example, this is work that improves techniques like causal scrubbing or compact proofs. Progress can also look like improving evaluations of interpretability methods on downstream tasks such as language model auditing, eval-awareness steering, or the aforementioned trojan detection.
+
+I also expect verification to matter for AI safety broadly. If we deeply trusted safety evals, a regulatory scheme would naturally incentivize labs to be safer. In their current state, my guess is any verifier would be Goodharted and likely backfire (e.g. training the CoT to look good makes real deception harder to find), but that does not have to be true for good enough verifiers used by external auditors. For international coordination, good verifiers (chip tracking, energy use tracking) could play the role that satellite imagery and seismic monitoring did to track nuclear tests.
+
+It is important that the verifiers are good. Some properties for a good verifier I have in mind:
+
+1. **Relevant:** When it passes, even without accounting for Goodharting, is it what you care about?
+2. **Goodhart resistant:** How many bits of optimization pressure can you apply before you expect it to break?
+3. **Cheap.** Expensive verifiers won't scale, but you can cascade increasingly expensive checks to mitigate this.
+4. **Informative.** If your interpretability tool could not only tell you that your explanation failed, but also why, it could be a useful debugger.
+
+COVID-era responses are a known reference class for recent attempts at deploying large amounts of capital quickly to solve a humanitarian crisis. Operation Warp Speed in particular offers a useful data point for mixing scaled grantmaking with verifier-based incentives. Advance Purchase Agreements guaranteed high payouts for pharmaceutical companies that could produce a vaccine that passed FDA approval within certain time periods. At the same time, companies could enter contracts that required sending various reports and intermediate results to BARDA who would decide whether to keep reimbursing expenditures. Pfizer was incentivized by the former and could front more of the cost to avoid dealing with the bureaucracy of the latter. As a smaller company, Moderna relied on more of the latter for funding. While overall reaction to the pandemic was too slow, once enacted, both strategies seemed additive.
+
+A focus on verifiability will not obsolete the value of thoughtful grantmaking and intrinsically motivated safety researchers. Furthermore, we should judge projects based on many criteria such as tractability, relevance, and how they fit into a diverse portfolio of strategies. Also, this approach has its own failure modes. For example, someone who would otherwise work on a more relevant hard-to-verify problem could be drawn to a less relevant easy-to-verify problem.
+
+Still, verifiability is what makes dollars convert into labor without immediately running into other bottlenecks, and that's what scales.
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+  <script>
+    (function () {
+      var raw = document.getElementById('source').textContent.trim();
+      var html = (window.marked ? marked.parse(raw) : raw.replace(/\n\n+/g,'</p><p>'));
+      document.getElementById('post').innerHTML = html;
+    })();
+  </script>
+</body>
+</html>
